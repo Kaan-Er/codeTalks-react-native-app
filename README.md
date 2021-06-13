@@ -22,10 +22,10 @@ Kullanıcı sohbet odası oluşturabilecek, o oda üzerinden sohbet edebilecekti
 
 ## Kendi localinizde çalıştırmak için : 
 
-git clone https://github.com/Kaan-Er/codeTalks-react-native-app.git
+``` git clone https://github.com/Kaan-Er/codeTalks-react-native-app.git ```
 
-cd codeTalks-react-native-app
+``` cd codeTalks-react-native-app ```
 
-yarn update
+``` yarn update ```
 
-yarn start
+``` yarn start ```
