@@ -15,6 +15,7 @@ const Register = ({navigation}) => {
       showMessage({
         message: 'Şifreler uyumlu değil',
         type: 'danger',
+        style: {alignItems: 'center'},
       });
       return;
     }
@@ -28,6 +29,7 @@ const Register = ({navigation}) => {
       showMessage({
         message: error.code,
         type: 'danger',
+        style: {alignItems: 'center'},
       });
       setLoading(false);
     }

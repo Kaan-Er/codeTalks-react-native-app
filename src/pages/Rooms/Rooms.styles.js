@@ -38,10 +38,14 @@ export default StyleSheet.create({
     borderColor: '#fff',
     width: '100%',
     backgroundColor: '#fff',
+    alignItems: 'center',
   },
   input: {
+    width: '80%',
     padding: 10,
     fontSize: 18,
+    borderBottomWidth: 1,
+    borderBottomColor: '#ccc',
   },
   button: {
     position: 'absolute',

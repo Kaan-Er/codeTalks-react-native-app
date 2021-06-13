@@ -21,6 +21,7 @@ const Login = ({navigation}) => {
       showMessage({
         message: error.code,
         type: 'danger',
+        style: {alignItems: 'center'},
       });
       setLoading(false);
     }

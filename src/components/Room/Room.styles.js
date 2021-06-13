@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Dimensions} from 'react-native';
 
 export default StyleSheet.create({
   container: {
@@ -6,9 +6,11 @@ export default StyleSheet.create({
     margin: 5,
     marginVertical: 10,
     backgroundColor: '#fff',
-    borderRadius: 5,
-    width: 170,
-    height: 200,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: '#ffca99',
+    width: Dimensions.get('window').width / 2.2,
+    height: 170,
     alignItems: 'center',
     justifyContent: 'center',
     shadowColor: '#000',
@@ -18,11 +20,14 @@ export default StyleSheet.create({
     },
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
-    elevation: 3,
+    elevation: 10,
   },
   roomNameText: {
     fontSize: 20,
     letterSpacing: 1.2,
+    color: '#FFA347',
+  },
+  icon: {
     color: '#FFA347',
   },
 });
