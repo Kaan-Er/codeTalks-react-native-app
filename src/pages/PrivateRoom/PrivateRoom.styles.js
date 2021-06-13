@@ -58,7 +58,7 @@ export default StyleSheet.create({
     borderRadius: 80,
     width: 60,
     alignItems: 'center',
-    backgroundColor: '#FFA347',
+    backgroundColor: '#ef811a',
   },
   newMessageText: {
     fontSize: 24,

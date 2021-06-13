@@ -21,19 +21,21 @@ const PrivateRoom = ({route}) => {
   };
 
   const hanleNewMessage = async () => {
-    setLoading(true);
-    await database()
-      .ref(`rooms/${route.params.room.id}/messages/`)
-      .push({
-        room: route.params.room.name,
-        roomId: route.params.room.id,
-        message: message,
-        userId: auth().currentUser.uid,
-        username: auth().currentUser.email.split('@')[0],
-        date: new Date().toISOString(),
-      });
-    setLoading(false);
-    setModalVisible(false);
+    if (!!message) {
+      setLoading(true);
+      await database()
+        .ref(`rooms/${route.params.room.id}/messages/`)
+        .push({
+          room: route.params.room.name,
+          roomId: route.params.room.id,
+          message: message,
+          userId: auth().currentUser.uid,
+          username: auth().currentUser.email.split('@')[0],
+          date: new Date().toISOString(),
+        });
+      setLoading(false);
+      setModalVisible(false);
+    }
   };
 
   useEffect(() => {

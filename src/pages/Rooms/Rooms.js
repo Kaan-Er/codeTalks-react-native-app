@@ -21,18 +21,20 @@ const Rooms = ({navigation}) => {
   };
 
   const handleNewRoom = async () => {
-    setLoading(true);
-    await database()
-      .ref('rooms/')
-      .push({
-        name: roomName,
-        messages: null,
-        userId: auth().currentUser.uid,
-        username: auth().currentUser.email.split('@')[0],
-        date: new Date().toISOString(),
-      });
-    setLoading(false);
-    setModalVisible(false);
+    if (!!roomName) {
+      setLoading(true);
+      await database()
+        .ref('rooms/')
+        .push({
+          name: roomName,
+          messages: null,
+          userId: auth().currentUser.uid,
+          username: auth().currentUser.email.split('@')[0],
+          date: new Date().toISOString(),
+        });
+      setLoading(false);
+      setModalVisible(false);
+    }
   };
 
   const enterRoom = room => {
