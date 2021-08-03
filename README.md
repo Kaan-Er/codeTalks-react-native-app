@@ -2,7 +2,7 @@
 
 Kullanıcıların kayıt olup giriş yapabileceği, ve sohbet odası açıp, katılabileceği bir platform.
 
-Kullanıcı sohbet odası oluşturabilecek, o oda üzerinden sohbet edebilecektir. Alt yapı olarak Firebase kullanılmıştır.
+Kullanıcı sohbet odası oluşturabilecek, ister özel(şifreli) isterse açık(public) odalar üzerinden sohbet edebilecektir.
 
 
 ## Kendi localinizde çalıştırmak için : 
