@@ -1,11 +1,11 @@
 # codeTalks - Realtime Chat Application
 
-Kullanıcıların kayıt olup giriş yapabileceği, ve sohbet odası açıp, katılabileceği bir platform.
+A platform where users can register, log in, open and join a chat room.
 
-Kullanıcı sohbet odası oluşturabilecek, ister özel(şifreli) isterse açık(public) odalar üzerinden sohbet edebilecektir.
+The user will be able to create a chat room and chat over private (encrypted) or open (public) rooms.
 
 
-## Kendi localinizde çalıştırmak için : 
+## To run in your local : 
 
 ``` git clone https://github.com/Kaan-Er/codeTalks-react-native-app.git ```
 
